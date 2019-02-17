@@ -1,0 +1,36 @@
+create table revr_bmbs_srv_contract_blue.tgt_claim_all_info_bkp(
+
+
+baumuster_6                string
+,product_line              string
+,damagecode                string
+,contractnumber             string
+,claimno                   string
+,product_en                string
+,claim_amount              float
+,claim_date                date
+,repair_date               date
+,first_registration_date    date
+,vega_credit_date          date
+,mileage_when_repair       int
+,repair_age                int
+,mileage_per_day           float
+,workshop                  int
+,service_dealer_cn         string
+,service_group             string
+,service_region           string
+,province                  string
+,city                      string
+,fin                       string
+,brand                     string
+,class                     string
+,model                     string
+,oil                       string
+,upper_limit               float
+,diff                      float
+,label                     string
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/claim_all_bkp';

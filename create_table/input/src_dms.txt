@@ -1,0 +1,40 @@
+create table revr_bmbs_srv_contract_blue.src_dms(
+
+fin	string	,
+contractnumber	string	,
+signature_date	string	,
+product_en	string	,
+product_line	string	,
+brand	string	,
+model	string	,
+class	string	,
+value float,
+repair_date	date	,
+mileage_when_repair	int	,
+repair_age	int	,
+service_region	string	,
+province	string	,
+city	string	,
+damagecode	string	,
+service	string	,
+claim_amount	float	,
+desc_c	string	,
+cost_c	float	,
+date_in	date	,
+code_c	string	,
+details_c	string	,
+social_id	string	,
+salutatn	string	,
+tar_magic	int	,
+company	string	,
+sex	string	,
+dob	string	,
+social_id_targt	string	,
+diff_date_in	int	,
+tmp_socialid	string
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_output/src_dms';
+

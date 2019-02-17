@@ -1,0 +1,27 @@
+create table revr_bmbs_srv_contract_blue.tmp_isp_blue_cost_essence(
+
+ContractNumber string,
+ Claimno string,
+ Product_EN string,
+ Product string,
+ DamageCode string,
+ Claim_Amount float,
+ Claim_Date date,
+ Repair_Date date,
+ First_Registration_Date date,
+ Vegacredit_Date date,
+ Mileage_When_Repair int,
+ Repair_Age int,
+ Mileage_Per_Day float,
+ Workshop int,
+ ServiceDealer_CN string,
+ ServiceGroup string,
+ ServiceRegion string,
+ Province string,
+ City string,
+ Service_Type string
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/tmp_isp_blue_cost_essence';

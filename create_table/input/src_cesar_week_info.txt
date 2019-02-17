@@ -1,0 +1,16 @@
+create table revr_bmbs_srv_contract_blue.src_cesar_week_info(
+
+brand string
+,region string
+,wtd  int 
+,mtd  int
+,ytd  int
+,week  int
+,start_date  int
+,end_date  int
+
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/cesar_week';

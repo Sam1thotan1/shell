@@ -1,0 +1,12 @@
+create table revr_bmbs_srv_contract_blue.src_price_blue_info(
+
+baumuster_6 int
+,service_type string
+,value_a float
+,value_b float
+,value_sp float
+,value_ac float
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/price_blue';

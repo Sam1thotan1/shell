@@ -1,0 +1,26 @@
+create table revr_bmbs_srv_contract_blue.tgt_pr_monthly_info(
+
+gssn                string
+,sap                int
+,year               int
+,month              int
+,dealer_name_cn     string
+,ownergroup         string
+,region             string
+,province           string
+,city               string
+,product_en         string
+,product_line       string
+,baumuster_6        int
+,brand              string
+,class              string
+,model              string
+,contractsales      float
+,vehiclesales       int
+,penetrationrate    float
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/pr_monthly';
+						

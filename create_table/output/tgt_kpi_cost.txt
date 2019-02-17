@@ -1,0 +1,14 @@
+create table revr_bmbs_srv_contract_blue.tgt_kpi_cost(
+
+year string,
+month string,
+service_region string,
+service_group string,
+product_en string,
+cost float
+ 
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_output/cost';

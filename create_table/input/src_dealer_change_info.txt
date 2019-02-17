@@ -1,0 +1,11 @@
+create table revr_bmbs_srv_contract_blue.src_dealer_change_info(
+
+gssn_old   string
+,dealer_old   string
+,gssn_new   string
+,dealer_new   string
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/dealer_change';
+

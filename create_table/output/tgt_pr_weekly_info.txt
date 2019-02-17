@@ -1,0 +1,26 @@
+create table revr_bmbs_srv_contract_blue.tgt_pr_weekly_info(
+
+region string,
+brand string,
+year int,
+month int,
+week int,
+product_en string,
+product_line string,
+ytd_contractsale int,
+mtd_contractsale int,
+wtd_contractsale int,
+ytd_newcar int,
+mtd_newcar int,
+wtd_newcar int,
+ytd_pr float,
+mtd_pr float,
+wtd_pr float,
+wtd_revenue int,
+start_date string,
+end_date string,
+datatype string
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/pr_weekly';

@@ -1,0 +1,121 @@
+create table revr_bmbs_srv_contract_blue.tgt_contract_essence_info(
+
+'contractnumber'
+,'fin'
+,'baumuster_6'
+,'brand'
+,'class' 
+,'model' 
+,'first_registration_date' 
+,'signature_date' 
+,'vehicle_age' 
+,'product_en' 
+,'product_line' 
+,'value' 
+,'oil' 
+,'cgi'
+,'dccount'
+,'a_count'
+,'b_count'
+,'ac_filter_count'
+,'spark_plug_count'
+,'gssn' 
+,'dealer_name_cn' 
+,'owner_group' 
+,'region' 
+,'province' 
+,'city' 
+,'servicetimes'
+,'a'
+,'b'
+,'ac'
+,'sp'
+,'detail' 
+,'remainservice'
+,'status' 
+,'costtillnow'
+,'balance'
+,'value_a'
+,'value_b'
+,'value_sp'
+,'value_ac'
+,'totalupperlimit'
+,'othercost'
+,'gap'
+,'exceedamount' 
+,'repairdate' 
+,'days_to_next_service_up' 
+,'days_to_next_service_low' 
+,'next_service_date_up' 
+,'next_service_date_low' 
+,'year'
+,'cost_2015'
+,'cost_2016'
+,'cost_2017'
+,'cost_2018'
+,'remainbalance_2015'
+,'remainbalance_2016'
+,'remainbalance_2017'
+,'remainbalance_2018'
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/contract_essence';
+
+fin                          object
+baumuster_6                   int64
+brand                        object
+class                        object
+model                        object
+first_registration_date      object
+signature_date               object
+vehicle_age                 float64
+product_en                   object
+product_line                 object
+value                         int64
+oil                          object
+cgi                          object
+dccount                     float64
+a_count                     float64
+b_count                     float64
+ac_filter_count             float64
+spark_plug_count            float64
+gssn                         object
+dealer_name_cn               object
+owner_group                  object
+region                       object
+province                     object
+city                         object
+servicetimes                float64
+a                           float64
+b                           float64
+ac                          float64
+sp                          float64
+detail                       object
+remainservice               float64
+status                       object
+costtillnow                 float64
+balance                     float64
+value_a                     float64
+value_b                     float64
+value_sp                    float64
+value_ac                    float64
+totalupperlimit             float64
+othercost                   float64
+gap                         float64
+exceedamount                 object
+repairdate                   object
+days_to_next_service_up      object
+days_to_next_service_low     object
+next_service_date_up         object
+next_service_date_low        object
+year                        float64
+cost_2015                   float64
+cost_2016                   float64
+cost_2017                   float64
+cost_2018                   float64
+remainbalance_2015          float64
+remainbalance_2016          float64
+remainbalance_2017          float64
+remainbalance_2018          float64

@@ -1,0 +1,10 @@
+create table revr_bmbs_srv_contract_blue.src_product_silver_info(
+
+product string
+,product_en string
+,service_type string
+,product_line string
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/product_silver';

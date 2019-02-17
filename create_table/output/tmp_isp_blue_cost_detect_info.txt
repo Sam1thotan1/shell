@@ -1,0 +1,14 @@
+create table revr_bmbs_srv_contract_blue.tmp_isp_blue_cost_detect_info(
+
+contractnumber string,
+claimno string,
+repairdate date,
+damagecode string,
+sortorder float,
+laggeddate date,
+laggeddc string,
+laggedsortorder float,
+daygap float
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/tmp_isp_cost_detect';

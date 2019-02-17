@@ -1,0 +1,25 @@
+create table revr_bmbs_srv_contract_blue.src_product_blue_info(
+
+vega_product_code  string
+,product_designation_text_in_cn string
+,brand  string
+,product_eN  string 
+,service_type  string
+,oil string
+,cgi string
+,dccount  int
+,a_count  int
+,b_count  int 
+,a_cfilter_count  int
+,spark_plug_count  int
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/product_blue';
+	
+
+
+
+
+				

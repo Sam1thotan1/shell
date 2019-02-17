@@ -1,0 +1,27 @@
+create table revr_bmbs_srv_contract_blue.src_contract_info(
+
+contract_number  string
+,external_id  string
+,source_system  string
+,contract_state  string 
+,product  string 
+,vega_code  string 
+,fin  string 
+,contract_start  string
+,first_registration_date  string
+,planned_contract_end  int
+,contract_duration  int
+,start_mileage  int
+,end_mileage  int
+,signature_date  string
+,activation_date  string
+,value  int
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/sale';
+						
+
+
+

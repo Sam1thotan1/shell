@@ -1,0 +1,16 @@
+create table revr_bmbs_srv_contract_blue.tgt_kpi_penetration(
+
+year string,
+month string,
+region string,
+ownergroup string,
+product_en string,
+contractsales int,
+vehiclesales int,
+penetration float
+ 
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_output/kpi_penetration';

@@ -1,0 +1,21 @@
+create table revr_bmbs_srv_contract_blue.src_product_isp_info(
+
+vega_product_code  string
+,product_designation_text_in_cn string
+,brand  string
+,product_en  string 
+,service_type  string
+,yearLimit  string
+,mileageLimit  string
+,dccount  string
+,a_count  float
+,b_count  float 
+,a_cfilter_count  float
+,spark_plug_count  float
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/product_isp';
+	
+				

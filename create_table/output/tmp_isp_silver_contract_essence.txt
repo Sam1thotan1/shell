@@ -1,0 +1,27 @@
+create table revr_bmbs_srv_contract_blue.tmp_isp_silver_contract_essence(
+
+ContractNumber string,
+ Fin string,
+ Baumuster_6 string,
+ Brand string,
+ Class string,
+ Model string,
+ First_Registration_Date date,
+ Signature_Date date,
+ Vehicle_Age int,
+ Status string,
+ Product_EN string,
+ Service_type string,
+ Product_line string,
+ Value int,
+ GSSN string,
+ Dealer_Name_CN string,
+ Owner_Group string,
+ Region string,
+ Province string,
+ City string
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/tmp_isp_silver_contract_essence';

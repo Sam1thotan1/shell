@@ -1,0 +1,15 @@
+create table revr_bmbs_srv_contract_blue.src_dealer_info(
+
+dealer_id  string
+,workshop  int
+,gssn   string
+,sap   int
+,dealer_name_cn   string
+,owner_group   string
+,region   string
+,province   string
+,city   string
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/dealer';

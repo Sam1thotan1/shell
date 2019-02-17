@@ -1,0 +1,14 @@
+create table revr_bmbs_srv_contract_blue.tgt_kpi_forecast(
+
+region string,
+owner_group string,
+product_en string,
+through_put float,
+last_modified_date string  
+ 
+
+
+)
+partitioned by (year string, month string) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_output/kpi_forecast';

@@ -1,0 +1,12 @@
+create table revr_bmbs_srv_contract_blue.src_model_info(
+
+baumuster_6  string
+,class  string
+,model  string
+
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/model';
+						

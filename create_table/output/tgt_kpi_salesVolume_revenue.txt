@@ -1,0 +1,15 @@
+create table revr_bmbs_srv_contract_blue.tgt_kpi_salesVolume_revenue(
+
+year string,
+month string,
+region string,
+owner_group string,
+product_en string,
+sales_volume int,
+revenue float
+ 
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_output/salesvolume_revenue';

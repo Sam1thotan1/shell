@@ -1,0 +1,20 @@
+create table revr_bmbs_srv_contract_blue.src_cost_info(
+
+contractnumber  string
+,externalid  string
+,product  string
+,vegacode  string 
+,workshop  int 
+,claimno  string 
+,claim_date  int
+,repair_date  int
+,vegacredit_date  int
+,damagecode  string
+,claim_amount  float
+,mileage_when_repair  int
+
+
+) 
+row format delimited fields terminated by '73'
+location '/data/reservoir/BMBS/Service_Contract_Blue/src_input/cost';
+						

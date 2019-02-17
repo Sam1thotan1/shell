@@ -1,0 +1,30 @@
+create table revr_bmbs_srv_contract_blue.tgt_isp_pr_weekly_info_bkp(
+
+Region string,
+ Brand string,
+ Year int,
+ Month string,
+ Week string,
+ Product_EN string,
+ Product_Line string,
+ YTD_contractsale bigint,
+ MTD_contractsale bigint,
+ WTD_contractsale bigint,
+ YTD_newcar int,
+ MTD_newcar int,
+ WTD_newcar int,
+ YTD_pr double,
+ MTD_pr double,
+ WTD_pr double,
+ YTD_Revenue bigint,
+ MTD_Revenue bigint,
+ WTD_Revenue bigint,
+ Start_Date string,
+ End_Date string,
+ DataType string
+
+
+
+) 
+row format delimited fields terminated by '|'
+location '/data/reservoir/BMBS/Service_Contract_Blue/tgt_output/tgt_isp_pr_weekly_info_bkp';
